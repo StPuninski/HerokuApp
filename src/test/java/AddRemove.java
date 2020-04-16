@@ -24,13 +24,9 @@ public class AddRemove {
         driver.findElement(By.xpath("//button[text()='Add Element']")).click();
         driver.findElement(By.xpath("//button[text()='Add Element']")).click();
         driver.findElement(By.xpath("//button[text()='Delete']")).click();
-        driver.findElement(By.xpath("//button[text()='Delete']")).getCssValue("")
+//        driver.findElement(By.xpath("//button[text()='Delete']")).
+//        И как элементы подсчитать?
 
-//        Select select = new Select(driver.findElement(By.id("dropdown")));
-//        select.selectByVisibleText("Option 1");
-//        select.selectByVisibleText("Option 2");
-//        String text = select.getFirstSelectedOption().getText();
-//        Assert.assertEquals(text, "Option 2", "Выбранная опция неверна");
 //                driver.quit();
 
     }
