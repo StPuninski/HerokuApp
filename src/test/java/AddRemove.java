@@ -3,7 +3,6 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -24,10 +23,9 @@ public class AddRemove {
         driver.findElement(By.xpath("//button[text()='Add Element']")).click();
         driver.findElement(By.xpath("//button[text()='Add Element']")).click();
         driver.findElement(By.xpath("//button[text()='Delete']")).click();
-//        driver.findElement(By.xpath("//button[text()='Delete']")).
-//        И как элементы подсчитать?
-
+        driver.findElements(By.xpath("//button[text()='Delete']")).size();
+        int numOfElements = driver.findElements(By.xpath("//button[text()='Delete']")).size();
+        Assert.assertEquals(numOfElements, 1, "Passed");
 //                driver.quit();
-
     }
 }
